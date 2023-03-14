@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=parseFloat(prompt("nhập a"));
+var b=parseFloat(prompt("nhập b"));
+var c=parseFloat(prompt("nhập c"));
+var delta=Math.pow(b,2)-4*a*c;
+var x1=(-b+Math.sqrt(delta))/(2*a);
+ var x2=(-b-Math.sqrt(delta))/(2*a);
+
+if(delta<0){
+    document.write("thông báo vô nghiệm");
+}else if(delta==0){
+    document.write("nghiệm của phương trình là :"+x1)
+    document.write("nghiệm khép");
+}else{
+document.write("nghiệm 1 của phương trình là :"+x1);
+document.write("<br />vnghiệm 2 của phương trình là :"+x2);
+document.write("<br />pt có hai nghiệm phân biệt");
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
